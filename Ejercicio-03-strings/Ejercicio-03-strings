@@ -1,0 +1,23 @@
+let nombre = "Víctor ";
+let apellidos = "Lorencio García";
+let estudiante = nombre.concat(apellidos)
+console.log(estudiante);
+let estudianteMayus = estudiante.toUpperCase();
+console.log(estudianteMayus);
+let estudianteMinus = estudiante.toLowerCase();
+console.log(estudianteMinus);
+
+let letras_estudiante = estudiante.length;
+console.log(letras_estudiante);
+
+let first_letter = nombre.charAt();
+console.log(first_letter)
+
+let last_letter_lastname = apellidos.charAt(14)
+console.log(last_letter_lastname)
+
+let sin_espacios = estudiante.trim();
+console.log(sin_espacios);
+
+let value = estudiante.includes(nombre)
+console.log(value);
