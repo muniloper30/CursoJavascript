@@ -1,0 +1,50 @@
+// Operador .valueOf()- obtener valores numéricos a parir de decimales 
+let a = 2;
+let b = new Number(3);
+
+console.log(a);
+console.log(b);
+console.log(a + b);
+
+console.log(b.valueOf());
+
+let str = new String("Hola soy el muni");
+console.log(str);
+console.log(str.valueOf());
+
+
+// NaN (not a number)- Infinity
+
+let n = Number("Adios");
+console.log(n);//not a number
+console.log(isNaN(n));
+
+let numerador = 19;
+let divisor = 0;
+
+let divisor_2 = null;
+
+
+console.log(numerador / divisor);
+console.log(numerador / divisor_2);
+
+
+// Números hexadecimales (base 16)
+
+let numHex = '0x3a5b7';
+console.log(parseInt(numHex, 16))//el 16 final es la base de número hexadecimal.
+
+
+// Como convertir los string a valores numéricos con Number, parseInt y parseFloat 
+let num1 = '17.2';
+let num2 = 3.34;
+
+console.log(typeof num1);
+console.log(num1 + num2);//error de concepto ya que lo que esta realizando es la concatenacion de ambas variables en vez de sumar 
+console.log(Number(num1) + num2);
+// Transforma mi string a number pero en uno saca el número entero y en otro el número con su coma flotante.    
+console.log(parseInt(num1));
+console.log(parseFloat(num1));
+
+// Obtener los valores máximos y mínimos en Javascript
+

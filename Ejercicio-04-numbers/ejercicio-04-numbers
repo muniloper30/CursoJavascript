@@ -1,0 +1,17 @@
+let altura_cm = 167;
+console.log(parseInt(altura_cm));
+
+let altura_m = 1.67;
+console.log(parseFloat(altura_m));
+
+let peso_float = 67.200;
+console.log(parseFloat(peso_float));
+
+let altura_red = Math.ceil(altura_m);
+console.log(altura_red);
+
+let peso_red = Math.floor(peso_float);
+console.log(peso_red);
+
+let comparar_igualdad = Number.MAX_VALUE + 1 === Number.MAX_VALUE;
+console.log(comparar_igualdad);
