@@ -1,0 +1,41 @@
+// Lista compra y añadir un elemento
+const lista_compra = ["arroz", "leche", "agua", "pasta", "pan de molde"];
+lista_compra.push("verduras");
+console.log(lista_compra);
+
+//borrar elemento final 
+lista_compra.pop();
+console.log(lista_compra);
+//lista de peliculas con titulo/director/fecha --> las fechas siempre con new Date(año/mes(contando desde 0)/día)
+const peliculas_favoritas = [
+{
+    titulo : "Piratas del caribe",
+    director : "Gore Verbinski",
+    fecha : new Date(2003, 5, 28)
+},
+{
+    titulo : "Spiderman in to the spider verse",
+    director : "Joaquim Dos Santos",
+    fecha : new Date(2018, 11, 14)
+},
+{
+    titulo : "Aladdin Disney",
+    director : "John Musker, Ron Clements",
+    fecha : new Date(1992, 10, 8)
+}
+]
+//con este método filtramos la fecha siendo menor a la fecha establecida (2010,0,1)
+const peliculasposteriores2010 = peliculas_favoritas.filter(valor => valor.fecha > new Date(2010, 0, 1));
+console.log(peliculasposteriores2010);
+
+const directores = peliculas_favoritas.map(nombres => nombres.director)
+const titulos = peliculas_favoritas.map(valor => valor.titulo)
+console.log(titulos)
+console.log(directores)
+
+const dirtitle = directores.concat(titulos)
+console.log(dirtitle);
+
+const dirtitle_propagacion = [...directores, ...titulos]
+console.log(dirtitle_propagacion);
+
