@@ -1,0 +1,14 @@
+prompt ("¿Cuá es tu edad?")
+'30'
+const edad = prompt ("¿Cuál es tu edad?")
+undefined
+edad
+'30'
+edad = Number(edad)
+VM350:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:6
+(anonymous) @ VM350:1
+const num_edad = Number(edad)
+undefined
+num_edad
+30

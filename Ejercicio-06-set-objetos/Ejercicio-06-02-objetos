@@ -1,0 +1,32 @@
+const datos = {
+    nombre :"Víctor",
+    apellidos : "Lorencio García",
+    edad : 30,
+    altura: 1.67,
+    isDeveloper: true
+}
+
+const age = (datos.edad)
+console.log(age)
+
+const datos2 = [
+    {
+        ...datos
+    },{
+        nombre : "Félix",
+        apellidos : "Pedrosa Núñez",
+        edad : 32,
+        altura : 1.84,
+        isDeveloper : false 
+    },{
+        nombre : "César",
+        apellidos : "Serrano Guerrero",
+        edad : 27,
+        altura : 1.81,
+        isDeveloper : false 
+    }
+]
+console.log(datos2)
+
+const datos3 = datos2.sort((a, b) => a.edad - b.edad)
+console.log(datos3)

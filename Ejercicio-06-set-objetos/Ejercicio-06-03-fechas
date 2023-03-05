@@ -1,0 +1,19 @@
+const fechahoy = new Date()
+console.log(fechahoy)
+
+const fechaNacimiento = new Date(1992, 10, 2)
+console.log(fechaNacimiento)
+
+const fecha3 = fechahoy > fechaNacimiento
+console.log(fecha3)
+
+
+const dia_nacimiento = fechaNacimiento.getDate()
+console.log(dia_nacimiento)
+
+const mes_nacimiento = fechaNacimiento.getMonth() + 1
+console.log(mes_nacimiento)
+
+const año_nacimiento = fechaNacimiento.getFullYear()
+console.log(año_nacimiento)
+
