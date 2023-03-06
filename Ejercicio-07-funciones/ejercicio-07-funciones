@@ -1,0 +1,29 @@
+function alwaysTrue(){
+    return true;
+}
+const siemprecierto = alwaysTrue()
+console.log(siemprecierto)
+
+
+async function miPromesa() {
+    return setTimeout(() => console.log("Hola soy una promesa"), 5000)
+}
+
+
+
+
+function* generaIndex(){
+    let id = 0
+    while(true){
+        yield id += 2
+    }
+}
+
+const gen = generaIndex();
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
+console.log(gen.next().value)
