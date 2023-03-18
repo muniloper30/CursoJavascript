@@ -1,0 +1,16 @@
+{
+  "name": "ejercicio-14-html-js-jquery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^14.1.1",
+    "jquery": "^3.6.4"
+  },
+  "scripts": {
+    "start": "http-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
